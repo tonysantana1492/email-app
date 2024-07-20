@@ -8,12 +8,20 @@
       @current-change="handleCurrentChange"
     >
       <el-table-column type="selection" width="55"> </el-table-column>
-      <el-table-column prop="name" label="" width="180"> </el-table-column>
-      <el-table-column prop="address" label=""></el-table-column>
+      <el-table-column label="" width="180">
+        <template slot-scope="{ row }">
+          <span class="font-bold text-gray-900">{{ row.from.name }}</span>
+        </template>
+      </el-table-column>
+      <el-table-column label="">
+        <template slot-scope="{ row }">
+          <span class="font-bold text-gray-900">{{ row.subject }} </span><span class="text-small text-gray-500">- {{ row.body }}</span>
+        </template>
+      </el-table-column>
       <el-table-column
         prop="date"
         label=""
-        width="180"
+        width="70"
         :formatter="formatter"
       ></el-table-column>
     </el-table>
@@ -32,6 +40,7 @@
 
 <script>
 import UserComponent from "./UserComponent.vue";
+import users from "../assets/data.json";
 
 export default {
   components: {
@@ -39,28 +48,7 @@ export default {
   },
   data() {
     return {
-      records: [
-        {
-          date: "2016-05-03",
-          name: "Tom",
-          address: "No. 189, Grove St, Los Angeles",
-        },
-        {
-          date: "2016-05-02",
-          name: "Tom",
-          address: "No. 189, Grove St, Los Angeles",
-        },
-        {
-          date: "2016-05-04",
-          name: "Tom",
-          address: "No. 189, Grove St, Los Angeles",
-        },
-        {
-          date: "2016-05-01",
-          name: "Tom",
-          address: "No. 189, Grove St, Los Angeles",
-        },
-      ],
+      records: users,
       dialogFormVisible: false,
       currentRow: {
         id: undefined,
@@ -102,10 +90,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.cell {
-  font-weight: 600;
-  color: black;
-}
-</style>

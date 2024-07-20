@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "from": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "avatar": "https://randomuser.me/api/portraits/men/1.jpg"
+    },
+    "subject": "Meeting Tomorrow",
+    "date": "2024-07-19T10:30:00Z",
+    "body": "Hey John,\n\nJust a reminder about our meeting tomorrow at 10:00 AM. Please be on time.\n\nBest regards,\nJane"
+  },
+  {
+    "id": 2,
+    "from": {
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "avatar": "https://randomuser.me/api/portraits/women/2.jpg"
+    },
+    "subject": "Summer Vacation Plans",
+    "date": "2024-07-18T15:45:00Z",
+    "body": "Hi Jane,\n\nI hope you're doing well. I wanted to discuss our plans for the summer vacation. Let's catch up soon!\n\nCheers,\nMike"
+  },
+  {
+    "id": 3,
+    "from": {
+      "name": "Mike Johnson",
+      "email": "mike.johnson@example.com",
+      "avatar": "https://randomuser.me/api/portraits/men/3.jpg"
+    },
+    "subject": "Project Status Update",
+    "date": "2024-07-17T09:00:00Z",
+    "body": "Hello Team,\n\nI wanted to update everyone on the status of our current project. We're making good progress!\n\nBest regards,\nMike"
+  }
+]
