@@ -1,12 +1,11 @@
 <template>
   <main
-    id="app"
     class="bg-gray-50 w-full h-screen bg-[transparent] overflow-hidden flex flex-col text-[#2c3e50] bg-[#f0f2f5]"
   >
     <email-header />
     <div class="flex w-full justify-between">
       <email-sidebar />
-      <email-list />
+      <router-view />
       <email-rightbar />
     </div>
   </main>
@@ -16,7 +15,6 @@
 import EmailHeader from "./components/EmailHeader.vue";
 import EmailSidebar from "./components/EmailSidebar.vue";
 import EmailRightbar from "./components/EmailRightbar.vue";
-import EmailList from "./components/EmailList.vue";
 </script>
 
 <style>

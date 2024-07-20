@@ -6,9 +6,9 @@
         iconColor="#636363"
         text="Main menu"
         hoverColor="hover:bg-gray-200"
-        class="-ml-2 mr-2"
+        class="ml-2 mr-2"
       />
-      <img width="107" src="img/GmailLogo.png" alt="" />
+      <img width="107" src="/img/GmailLogo.png" alt="" />
     </div>
     <div class="flex flex-1 justify-between items-center">
       <div

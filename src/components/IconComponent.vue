@@ -1,5 +1,5 @@
 <template>
-  <div id="IconComponent" v-if="iconString">
+  <button id="IconComponent">
     <div 
       class="
         flex 
@@ -40,7 +40,7 @@
     >
         {{ text }}
     </div>
-  </div>
+  </button>
 </template>
 
 <script setup>
@@ -61,6 +61,7 @@
     text: String,
     hoverColor: String,
   })
+
   const { iconString, iconColor, text, hoverColor } = toRefs(props)
 
   let icon = null

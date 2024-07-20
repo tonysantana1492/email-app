@@ -1,7 +1,7 @@
 <template>
   <div class="flex w-full h-screen pl-2 pb-20">
     <el-table
-      class="w-full rounded-lg"
+      class="w-full"
       :data="records"
       ref="singleTable"
       highlight-current-row
@@ -39,56 +39,37 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import MessageView from "./MessageView.vue";
 import users from "../assets/data.json";
+import router from '../router';
 
-export default {
-  components: {
-    MessageView,
-  },
-  data() {
-    return {
-      records: users,
-      dialogFormVisible: false,
-      currentRow: {
-        id: undefined,
-        importance: 1,
-        remark: "",
-        timestamp: new Date(),
-        title: "",
-        type: "",
-        status: "published",
-      },
-    };
-  },
-  methods: {
-    formatter(row) {
-      const inputDate = row.date;
-      const parts = inputDate.split("-");
-      const year = parseInt(parts[0], 10);
-      const month = parseInt(parts[1], 10);
-      const day = parseInt(parts[2], 10);
+const records = users;
+let dialogFormVisible = false;
+let currentRow = {};
 
-      const date = new Date(year, month - 1, day);
+const formatter = (row) => {
+  const inputDate = row.date;
+  const parts = inputDate.split("-");
+  const year = parseInt(parts[0], 10);
+  const month = parseInt(parts[1], 10);
+  const day = parseInt(parts[2], 10);
 
-      const monthName = date.toLocaleString("en-US", { month: "short" });
+  const date = new Date(year, month - 1, day);
 
-      const formattedDay = ("0" + day).slice(-2);
+  const monthName = date.toLocaleString("en-US", { month: "short" });
 
-      const formattedDate = monthName + " " + formattedDay;
+  const formattedDay = ("0" + day).slice(-2);
 
-      return formattedDate;
-    },
-    setCurrent(row) {
-      this.$refs.singleTable.setCurrentRow(row);
-    },
-    handleCurrentChange(val) {
-      console.log(val.name);
-      this.currentRow = val;
-      this.dialogFormVisible = true;
-    },
-  },
+  const formattedDate = monthName + " " + formattedDay;
+
+  return formattedDate;
+};
+
+const handleCurrentChange = (val) => {
+  currentRow = val;
+  dialogFormVisible = true;
+  router.push('/message/' + val.id)
 };
 </script>
 
@@ -97,7 +78,8 @@ export default {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 1; /* Número de líneas a mostrar */
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
 

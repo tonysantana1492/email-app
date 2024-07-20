@@ -17,19 +17,349 @@
       "email": "jane.smith@example.com",
       "avatar": "https://randomuser.me/api/portraits/women/2.jpg"
     },
-    "subject": "Summer Vacation Plans",
+    "subject": "Report Update",
     "date": "2024-07-18T15:45:00Z",
-    "body": "Hi Jane,\n\nI hope you're doing well. I wanted to discuss our plans for the summer vacation. Let's catch up soon!\n\nCheers,\nMike"
+    "body": "Hi everyone,\n\nI've attached the latest report update for your review. Please let me know if you have any questions.\n\nThanks,\nJane"
   },
   {
     "id": 3,
     "from": {
-      "name": "Mike Johnson",
-      "email": "mike.johnson@example.com",
+      "name": "Michael Johnson",
+      "email": "michael.johnson@example.com",
       "avatar": "https://randomuser.me/api/portraits/men/3.jpg"
     },
-    "subject": "Project Status Update",
+    "subject": "Vacation Request",
     "date": "2024-07-17T09:00:00Z",
-    "body": "Hello Team,\n\nI wanted to update everyone on the status of our current project. We're making good progress!\n\nBest regards,\nMike"
+    "body": "Hello,\n\nI hope this message finds you well. I would like to request vacation time from July 25th to August 5th. Please let me know if this is feasible.\n\nBest regards,\nMichael"
+  },
+  {
+    "id": 4,
+    "from": {
+      "name": "Emily Brown",
+      "email": "emily.brown@example.com",
+      "avatar": "https://randomuser.me/api/portraits/women/4.jpg"
+    },
+    "subject": "Project Update",
+    "date": "2024-07-16T13:20:00Z",
+    "body": "Dear team,\n\nI'm pleased to inform you that we've completed the latest phase of the project ahead of schedule. Please review the attached update.\n\nRegards,\nEmily"
+  },
+  {
+    "id": 5,
+    "from": {
+      "name": "David Wilson",
+      "email": "david.wilson@example.com",
+      "avatar": "https://randomuser.me/api/portraits/men/5.jpg"
+    },
+    "subject": "Task Assignment",
+    "date": "2024-07-15T11:10:00Z",
+    "body": "Hi team,\n\nI've assigned tasks for the upcoming sprint. Please check your assignments and let me know if you have any concerns.\n\nBest regards,\nDavid"
+  },
+  {
+    "id": 6,
+    "from": {
+      "name": "Sophia Lee",
+      "email": "sophia.lee@example.com",
+      "avatar": "https://randomuser.me/api/portraits/women/6.jpg"
+    },
+    "subject": "Feedback Request",
+    "date": "2024-07-14T08:30:00Z",
+    "body": "Hi everyone,\n\nI would appreciate your feedback on the latest design mockups. Your input will help us finalize the project.\n\nThanks,\nSophia"
+  },
+  {
+    "id": 7,
+    "from": {
+      "name": "Daniel Martinez",
+      "email": "daniel.martinez@example.com",
+      "avatar": "https://randomuser.me/api/portraits/men/7.jpg"
+    },
+    "subject": "Upcoming Event",
+    "date": "2024-07-13T16:55:00Z",
+    "body": "Dear team,\n\nJust a reminder about the upcoming team-building event this Friday. Please RSVP by tomorrow.\n\nBest regards,\nDaniel"
+  },
+  {
+    "id": 8,
+    "from": {
+      "name": "Olivia Garcia",
+      "email": "olivia.garcia@example.com",
+      "avatar": "https://randomuser.me/api/portraits/women/8.jpg"
+    },
+    "subject": "Weekly Update",
+    "date": "2024-07-12T14:00:00Z",
+    "body": "Hello team,\n\nHere's the weekly update on our progress. Please review and let me know if you have any questions.\n\nBest regards,\nOlivia"
+  },
+  {
+    "id": 9,
+    "from": {
+      "name": "Ethan Rodriguez",
+      "email": "ethan.rodriguez@example.com",
+      "avatar": "https://randomuser.me/api/portraits/men/9.jpg"
+    },
+    "subject": "Meeting Reminder",
+    "date": "2024-07-11T09:30:00Z",
+    "body": "Hi,\n\nJust a quick reminder about our meeting today at 10:00 AM. See you there!\n\nRegards,\nEthan"
+  },
+  {
+    "id": 10,
+    "from": {
+      "name": "Ava Martinez",
+      "email": "ava.martinez@example.com",
+      "avatar": "https://randomuser.me/api/portraits/women/10.jpg"
+    },
+    "subject": "Project Kickoff",
+    "date": "2024-07-10T12:15:00Z",
+    "body": "Dear team,\n\nI'm excited to announce the kickoff of our new project. Please attend the kickoff meeting scheduled for tomorrow.\n\nBest regards,\nAva"
+  },
+  {
+    "id": 11,
+    "from": {
+      "name": "Noah Hernandez",
+      "email": "noah.hernandez@example.com",
+      "avatar": "https://randomuser.me/api/portraits/men/11.jpg"
+    },
+    "subject": "Presentation Request",
+    "date": "2024-07-09T17:00:00Z",
+    "body": "Hello,\n\nI would like to request a presentation slot for our team's latest achievements in the upcoming monthly meeting.\n\nBest regards,\nNoah"
+  },
+  {
+    "id": 12,
+    "from": {
+      "name": "Isabella Lopez",
+      "email": "isabella.lopez@example.com",
+      "avatar": "https://randomuser.me/api/portraits/women/12.jpg"
+    },
+    "subject": "Training Session",
+    "date": "2024-07-08T10:45:00Z",
+    "body": "Hi team,\n\nWe'll be conducting a training session next week on the new software update. Details will follow soon.\n\nRegards,\nIsabella"
+  },
+  {
+    "id": 13,
+    "from": {
+      "name": "Mason Gonzales",
+      "email": "mason.gonzales@example.com",
+      "avatar": "https://randomuser.me/api/portraits/men/13.jpg"
+    },
+    "subject": "Request for Information",
+    "date": "2024-07-07T08:20:00Z",
+    "body": "Dear colleagues,\n\nI'm seeking information regarding the upcoming departmental reorganization. Any updates would be appreciated.\n\nBest regards,\nMason"
+  },
+  {
+    "id": 14,
+    "from": {
+      "name": "Amelia Taylor",
+      "email": "amelia.taylor@example.com",
+      "avatar": "https://randomuser.me/api/portraits/women/14.jpg"
+    },
+    "subject": "Team Building Activity",
+    "date": "2024-07-06T13:40:00Z",
+    "body": "Hello team,\n\nLet's plan a team-building activity for next month. Please share your ideas and availability.\n\nThanks,\nAmelia"
+  },
+  {
+    "id": 15,
+    "from": {
+      "name": "Logan Thomas",
+      "email": "logan.thomas@example.com",
+      "avatar": "https://randomuser.me/api/portraits/men/15.jpg"
+    },
+    "subject": "Quarterly Review",
+    "date": "2024-07-05T11:55:00Z",
+    "body": "Dear team,\n\nIt's time for our quarterly review meeting. Please prepare your reports and updates.\n\nBest regards,\nLogan"
+  },
+  {
+    "id": 16,
+    "from": {
+      "name": "Harper Anderson",
+      "email": "harper.anderson@example.com",
+      "avatar": "https://randomuser.me/api/portraits/women/16.jpg"
+    },
+    "subject": "New Product Launch",
+    "date": "2024-07-04T09:25:00Z",
+    "body": "Hi team,\n\nWe're excited to announce the launch of our new product. Please join us for the launch event next week.\n\nBest regards,\nHarper"
+  },
+  {
+    "id": 17,
+    "from": {
+      "name": "Lucas Martinez",
+      "email": "lucas.martinez@example.com",
+      "avatar": "https://randomuser.me/api/portraits/men/17.jpg"
+    },
+    "subject": "Budget Meeting",
+    "date": "2024-07-03T14:15:00Z",
+    "body": "Dear team,\n\nWe'll be discussing the budget for the upcoming fiscal year in our meeting tomorrow. Please review the agenda.\n\nRegards,\nLucas"
+  },
+  {
+    "id": 18,
+    "from": {
+      "name": "Ella Hernandez",
+      "email": "ella.hernandez@example.com",
+      "avatar": "https://randomuser.me/api/portraits/women/18.jpg"
+    },
+    "subject": "Holiday Schedule",
+    "date": "2024-07-02T16:00:00Z",
+    "body": "Hi team,\n\nPlease find attached the holiday schedule for the upcoming year. Let me know if you have any questions.\n\nBest regards,\nElla"
+  },
+  {
+    "id": 19,
+    "from": {
+      "name": "Benjamin Gonzalez",
+      "email": "benjamin.gonzalez@example.com",
+      "avatar": "https://randomuser.me/api/portraits/men/19.jpg"
+    },
+    "subject": "Client Meeting Recap",
+    "date": "2024-07-01T11:30:00Z",
+    "body": "Hello,\n\nHere's a recap of our recent client meeting. Please review the discussion points and action items.\n\nRegards,\nBenjamin"
+  },
+  {
+    "id": 20,
+    "from": {
+      "name": "Grace Perez",
+      "email": "grace.perez@example.com",
+      "avatar": "https://randomuser.me/api/portraits/women/20.jpg"
+    },
+    "subject": "Project Status Update",
+    "date": "2024-06-30T09:50:00Z",
+    "body": "Hi team,\n\nPlease see the attached document for the latest project status update. Let me know if you have any questions.\n\nBest regards,\nGrace"
+  },
+  {
+    "id": 21,
+    "from": {
+      "name": "Alexander Carter",
+      "email": "alexander.carter@example.com",
+      "avatar": "https://randomuser.me/api/portraits/men/21.jpg"
+    },
+    "subject": "Training Feedback",
+    "date": "2024-06-29T15:05:00Z",
+    "body": "Dear team,\n\nYour feedback on the recent training session is important to us. Please take a moment to share your thoughts.\n\nRegards,\nAlexander"
+  },
+  {
+    "id": 22,
+    "from": {
+      "name": "Chloe Scott",
+      "email": "chloe.scott@example.com",
+      "avatar": "https://randomuser.me/api/portraits/women/22.jpg"
+    },
+    "subject": "Project Kickoff Meeting",
+    "date": "2024-06-28T08:40:00Z",
+    "body": "Hello team,\n\nI'm pleased to announce the kickoff meeting for our new project. Please find the details attached.\n\nBest regards,\nChloe"
+  },
+  {
+    "id": 23,
+    "from": {
+      "name": "William Wright",
+      "email": "william.wright@example.com",
+      "avatar": "https://randomuser.me/api/portraits/men/23.jpg"
+    },
+    "subject": "Request for Proposal",
+    "date": "2024-06-27T11:20:00Z",
+    "body": "Dear team,\n\nWe're preparing a proposal for the upcoming project. Your input and expertise are crucial to our success.\n\nBest regards,\nWilliam"
+  },
+  {
+    "id": 24,
+    "from": {
+      "name": "Avery Green",
+      "email": "avery.green@example.com",
+      "avatar": "https://randomuser.me/api/portraits/women/24.jpg"
+    },
+    "subject": "Quarterly Financial Report",
+    "date": "2024-06-26T14:30:00Z",
+    "body": "Hi team,\n\nAttached is the quarterly financial report. Please review and provide your feedback by the end of the week.\n\nRegards,\nAvery"
+  },
+  {
+    "id": 25,
+    "from": {
+      "name": "James Adams",
+      "email": "james.adams@example.com",
+      "avatar": "https://randomuser.me/api/portraits/men/25.jpg"
+    },
+    "subject": "New Employee Orientation",
+    "date": "2024-06-25T09:15:00Z",
+    "body": "Hello,\n\nWe have a new employee joining us next week. Please coordinate with HR for the orientation schedule.\n\nBest regards,\nJames"
+  },
+  {
+    "id": 26,
+    "from": {
+      "name": "Evelyn Baker",
+      "email": "evelyn.baker@example.com",
+      "avatar": "https://randomuser.me/api/portraits/women/26.jpg"
+    },
+    "subject": "Project Milestones",
+    "date": "2024-06-24T12:00:00Z",
+    "body": "Hi team,\n\nI've updated the project milestones based on our recent discussions. Please review and confirm.\n\nRegards,\nEvelyn"
+  },
+  {
+    "id": 27,
+    "from": {
+      "name": "Matthew Nelson",
+      "email": "matthew.nelson@example.com",
+      "avatar": "https://randomuser.me/api/portraits/men/27.jpg"
+    },
+    "subject": "Team Meeting Agenda",
+    "date": "2024-06-23T15:45:00Z",
+    "body": "Dear team,\n\nAttached is the agenda for our upcoming team meeting. Please review and suggest any additional topics.\n\nRegards,\nMatthew"
+  },
+  {
+    "id": 28,
+    "from": {
+      "name": "Sofia Hill",
+      "email": "sofia.hill@example.com",
+      "avatar": "https://randomuser.me/api/portraits/women/28.jpg"
+    },
+    "subject": "Product Feedback",
+    "date": "2024-06-22T09:30:00Z",
+    "body": "Hi,\n\nWe'd like your feedback on the latest product features. Please share your thoughts and suggestions.\n\nBest regards,\nSofia"
+  },
+  {
+    "id": 29,
+    "from": {
+      "name": "Jack Carter",
+      "email": "jack.carter@example.com",
+      "avatar": "https://randomuser.me/api/portraits/men/29.jpg"
+    },
+    "subject": "Client Proposal Review",
+    "date": "2024-06-21T11:20:00Z",
+    "body": "Dear team,\n\nPlease review the client proposal attached. We'll discuss it in our next meeting.\n\nRegards,\nJack"
+  },
+  {
+    "id": 30,
+    "from": {
+      "name": "Scarlett Mitchell",
+      "email": "scarlett.mitchell@example.com",
+      "avatar": "https://randomuser.me/api/portraits/women/30.jpg"
+    },
+    "subject": "Holiday Announcement",
+    "date": "2024-06-20T14:10:00Z",
+    "body": "Hello team,\n\nI'm pleased to announce additional holidays for the upcoming year. Please see the details attached.\n\nBest regards,\nScarlett"
+  },
+  {
+    "id": 31,
+    "from": {
+      "name": "Liam Perez",
+      "email": "liam.perez@example.com",
+      "avatar": "https://randomuser.me/api/portraits/men/31.jpg"
+    },
+    "subject": "Training Invitation",
+    "date": "2024-06-19T08:55:00Z",
+    "body": "Hi team,\n\nYou're invited to attend a training session on advanced project management techniques next week. Details are attached.\n\nBest regards,\nLiam"
+  },
+  {
+    "id": 32,
+    "from": {
+      "name": "Nora Flores",
+      "email": "nora.flores@example.com",
+      "avatar": "https://randomuser.me/api/portraits/women/32.jpg"
+    },
+    "subject": "Project Deadline Extension",
+    "date": "2024-06-18T12:30:00Z",
+    "body": "Dear team,\n\nDue to unforeseen circumstances, we need to extend the project deadline. Please review the updated schedule.\n\nRegards,\nNora"
+  },
+  {
+    "id": 33,
+    "from": {
+      "name": "Mason Sanchez",
+      "email": "mason.sanchez@example.com",
+      "avatar": "https://randomuser.me/api/portraits/men/33.jpg"
+    },
+    "subject": "Quarterly Goals Review",
+    "date": "2024-06-17T15:20:00Z",
+    "body": "Hello team,\n\nLet's review our quarterly goals progress in our upcoming meeting. Please"
   }
 ]

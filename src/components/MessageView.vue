@@ -1,52 +1,83 @@
 <template>
-  <div
-    id="SingleMessageSection"
-    class="w-full bg-white ml-2 rounded-t-xl h-full shadow-sm"
-  >
-    <div class="w-full flex">
-      <img class="rounded-full mt-8 mx-5 custom-img" :src="email.from.avatar" />
-      <div class="w-full my-4 mx-0.5">
-        <div class="font-semibold text-sm mt-4 mb-4">
-          <div class="w-full flex justify-between items-center">
-            <div>{{ email.from.email }}</div>
-            <div class="mr-5 text-xs font-normal">
-              {{ formatDate(email.date) }}
-            </div>
+  <div class="flex w-full h-screen pl-2 pb-20">
+    <div class="w-full flex rounded-lg bg-white flex-col">
+      <div class="border-b">
+        <div class="flex items-center justify-between px-1.5 py-0.5">
+          <div class="flex">
+            <button @click="onBack" class="ml-3">
+              <IconComponent
+                iconString="back"
+                :iconSize="19"
+                iconColor="#636363"
+                text="Back to inbox"
+                hoverColor="hover:bg-gray-100"
+              />
+            </button>
+
+            <IconComponent
+              iconString="trash"
+              :iconSize="19"
+              iconColor="#636363"
+              text="Delete"
+              hoverColor="hover:bg-gray-100"
+              class="ml-3"
+            />
           </div>
-          <span class="text-xs text-gray-500 font-normal">to me</span>
+          <div class="text-xs text-gray-500">1-50 of 153</div>
         </div>
-        <div>{{ email.body }}</div>
+      </div>
+
+      <div class="w-full flex">
+        <img
+          class="rounded-full mt-8 mx-5 custom-img w-[40px] h-[40px]"
+          :src="email?.from?.avatar"
+        />
+        <div class="w-full my-4 mx-0.5">
+          <div class="font-semibold text-sm mt-4 mb-4">
+            <div class="w-full flex justify-between items-center">
+              <div>{{ email?.from?.email }}</div>
+              <div class="mr-5 text-xs font-normal">
+                {{ formatDate(email?.date) }}
+              </div>
+            </div>
+            <span class="text-xs text-gray-500 font-normal">to me</span>
+          </div>
+          <div>{{ email?.body }}</div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { onMounted, ref } from "vue";
+import { onMounted, ref, defineProps } from "vue";
 import { formatDate } from "@/utils";
+import IconComponent from "./IconComponent.vue";
+import users from "@/assets/data.json";
+import router from "@/router";
 
 let email = ref({});
 
-onMounted(async () => {
+const props = defineProps({
+  id: String,
+});
+
+onMounted(() => {
+  const { id, from, subject, date, body } = users.find(
+    (email) => email.id == props.id
+  );
+
   email.value = {
-    id: 1,
-    from: {
-      name: "John Doe",
-      email: "john.doe@example.com",
-      avatar: "https://randomuser.me/api/portraits/men/1.jpg",
-    },
-    subject: "Meeting Tomorrow",
-    date: "2024-07-19T10:30:00Z",
-    body: "Hey John,\n\nJust a reminder about our meeting tomorrow at 10:00 AM. Please be on time.\n\nBest regards,\nJane",
+    id,
+    from,
+    subject,
+    date,
+    body,
   };
 });
-</script>
 
-<style setup>
-#SingleMessageSection {
-  .custom-img {
-    width: 40px;
-    height: 40px;
-  }
-}
-</style>
+const onBack = () => {
+  console.log("back");
+  router.go(-1);
+};
+</script>
