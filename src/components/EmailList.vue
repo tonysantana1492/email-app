@@ -1,6 +1,12 @@
 <template>
   <div class="flex w-full h-screen pl-2 pb-20">
-    <el-table class="w-full rounded-lg" :data="tableData">
+    <el-table
+      class="w-full rounded-lg"
+      :data="records"
+      ref="singleTable"
+      highlight-current-row
+      @current-change="handleCurrentChange"
+    >
       <el-table-column type="selection" width="55"> </el-table-column>
       <el-table-column prop="name" label="" width="180"> </el-table-column>
       <el-table-column prop="address" label=""></el-table-column>
@@ -11,14 +17,29 @@
         :formatter="formatter"
       ></el-table-column>
     </el-table>
+
+    <el-dialog
+      class="text-left"
+      :title="currentRow.name"
+      :visible.sync="dialogFormVisible"
+    >
+      <div class="flex justify-start items-center">
+        <user-component></user-component>
+      </div>
+    </el-dialog>
   </div>
 </template>
 
 <script>
+import UserComponent from "./UserComponent.vue";
+
 export default {
+  components: {
+    UserComponent,
+  },
   data() {
     return {
-      tableData: [
+      records: [
         {
           date: "2016-05-03",
           name: "Tom",
@@ -40,6 +61,16 @@ export default {
           address: "No. 189, Grove St, Los Angeles",
         },
       ],
+      dialogFormVisible: false,
+      currentRow: {
+        id: undefined,
+        importance: 1,
+        remark: "",
+        timestamp: new Date(),
+        title: "",
+        type: "",
+        status: "published",
+      },
     };
   },
   methods: {
@@ -59,6 +90,14 @@ export default {
       const formattedDate = monthName + " " + formattedDay;
 
       return formattedDate;
+    },
+    setCurrent(row) {
+      this.$refs.singleTable.setCurrentRow(row);
+    },
+    handleCurrentChange(val) {
+      console.log(val.name);
+      this.currentRow = val;
+      this.dialogFormVisible = true;
     },
   },
 };
