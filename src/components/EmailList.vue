@@ -15,7 +15,10 @@
       </el-table-column>
       <el-table-column label="">
         <template slot-scope="{ row }">
-          <span class="font-bold text-gray-900">{{ row.subject }} </span><span class="text-small text-gray-500">- {{ row.body }}</span>
+          <div class="truncate">
+            <span class="font-bold text-gray-900">{{ row.subject }} </span
+            ><span class="text-small text-gray-500">- {{ row.body }}</span>
+          </div>
         </template>
       </el-table-column>
       <el-table-column
@@ -27,24 +30,22 @@
     </el-table>
 
     <el-dialog
-      class="text-left"
-      :title="currentRow.name"
+      class="text-left w-full text-xl font-light"
+      :title="currentRow.subject"
       :visible.sync="dialogFormVisible"
     >
-      <div class="flex justify-start items-center">
-        <user-component></user-component>
-      </div>
+      <message-view></message-view>
     </el-dialog>
   </div>
 </template>
 
 <script>
-import UserComponent from "./UserComponent.vue";
+import MessageView from "./MessageView.vue";
 import users from "../assets/data.json";
 
 export default {
   components: {
-    UserComponent,
+    MessageView,
   },
   data() {
     return {
@@ -90,3 +91,17 @@ export default {
   },
 };
 </script>
+
+<style>
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* Número de líneas a mostrar */
+  -webkit-box-orient: vertical;
+}
+
+.el-dialog__body {
+  padding: 0px 10px;
+}
+</style>

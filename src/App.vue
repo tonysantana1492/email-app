@@ -1,11 +1,22 @@
 <template>
-  <main id="app">
-    <email-view></email-view>
+  <main
+    id="app"
+    class="bg-gray-50 w-full h-screen bg-[transparent] overflow-hidden flex flex-col text-[#2c3e50] bg-[#f0f2f5]"
+  >
+    <email-header />
+    <div class="flex w-full justify-between">
+      <email-sidebar />
+      <email-list />
+      <email-rightbar />
+    </div>
   </main>
 </template>
 
 <script setup>
-import EmailView from "./components/EmailView.vue";
+import EmailHeader from "./components/EmailHeader.vue";
+import EmailSidebar from "./components/EmailSidebar.vue";
+import EmailRightbar from "./components/EmailRightbar.vue";
+import EmailList from "./components/EmailList.vue";
 </script>
 
 <style>
@@ -17,12 +28,5 @@ import EmailView from "./components/EmailView.vue";
 
 #app {
   font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
-  text-align: center;
-  color: #2c3e50;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f0f2f5;
-  height: 100vh;
 }
 </style>
