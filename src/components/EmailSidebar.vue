@@ -1,51 +1,45 @@
 <template>
   <aside class="w-[260px]">
     <div
-      class="flex items-center justify-center bg-sky-200 w-36 h-8 mt-2 rounded-2xl ml-2 p-7 cursor-pointer"
+      class="flex items-center justify-center bg-sky-200 w-36 h-8 mt-2 rounded-2xl ml-2 p-7 cursor-pointer hover:shadow-md"
     >
-      <PencilOutlineIcon :size="25" class="mr-4" />
-      <span class="text-sm">Compose</span>
+      <PencilOutlineIcon :size="25" class="mr-2" />
+      <span class="text-sm font-bold">Compose</span>
     </div>
 
     <div class="my-5"></div>
 
-    <div
+    <button
       class="flex w-[250px] justify-between items-center px-6 py-1.5 bg-blue-100 rounded-r-full"
     >
       <div class="flex items-center">
         <InboxIcon :size="17" />
-        <p class="text-sm pl-4 font-semibold">Inbox</p>
+        <p class="text-sm pl-4 font-bold">Inbox</p>
       </div>
-      <p class="text-xs font-semibold">3034</p>
-    </div>
+      <p class="text-xs font-bold">3034</p>
+    </button>
 
-    <div class="flex w-[250px] justify-between px-6 py-1.5">
-      <div class="flex items-center">
-        <StarOutlineIcon :size="17" />
-        <div class="text-sm pl-4">Starred</div>
-      </div>
-    </div>
+    <button
+      class="flex w-[250px] justify-start px-6 py-1.5 hover:bg-gray-200 hover:rounded-r-full"
+    >
+      <StarOutlineIcon :size="17" />
+      <div class="text-sm pl-4">Starred</div>
+    </button>
 
-    <div class="flex w-[250px] justify-between px-6 py-1.5">
-      <div class="flex items-center">
+    <button class="flex w-[250px] justify-start px-6 py-1.5 hover:bg-gray-200 hover:rounded-r-full">
         <ClockOutlineIcon :size="17" />
         <div class="text-sm pl-4">Snoozed</div>
-      </div>
-    </div>
+    </button>
 
-    <div class="flex w-[250px] justify-between px-6 py-1.5">
-      <div class="flex items-center">
+    <button class="flex w-[250px] justify-start px-6 py-1.5 hover:bg-gray-200 hover:rounded-r-full">
         <SendOutlineIcon :size="17" />
         <div class="text-sm pl-4">Sent</div>
-      </div>
-    </div>
+    </button>
 
-    <div class="flex w-[250px] justify-between px-6 py-1.5">
-      <div class="flex items-center">
+    <button class="flex w-[250px] justify-start px-6 py-1.5 hover:bg-gray-200 hover:rounded-r-full">
         <FileOutlineIcon :size="17" />
         <div class="text-sm pl-4">Drafts</div>
-      </div>
-    </div>
+    </button>
   </aside>
 </template>
 

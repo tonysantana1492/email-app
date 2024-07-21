@@ -1,12 +1,12 @@
 <template>
   <header class="flex items-center p-2 flex-1">
-    <div class="min-w-[250px] flex justify-start items-center px-3.5">
+    <div class="min-w-[250px] flex justify-start items-center">
       <IconComponent
         iconString="menu"
         iconColor="#636363"
         text="Main menu"
         hoverColor="hover:bg-gray-200"
-        class="ml-2 mr-2"
+        class="mr-2"
       />
       <img width="107" src="/img/GmailLogo.png" alt="" />
     </div>

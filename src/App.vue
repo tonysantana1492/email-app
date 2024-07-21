@@ -3,11 +3,13 @@
     class="bg-gray-50 w-full h-screen bg-[transparent] overflow-hidden flex flex-col text-[#2c3e50] bg-[#f0f2f5]"
   >
     <email-header />
-    <div class="flex w-full justify-between">
+    <section class="flex w-full justify-between">
       <email-sidebar />
-      <router-view />
+      <div class="flex w-full h-screen pl-2 pb-20">
+        <router-view />
+      </div>
       <email-rightbar />
-    </div>
+    </section>
   </main>
 </template>
 
